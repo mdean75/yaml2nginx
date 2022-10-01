@@ -1,0 +1,16 @@
+config:
+  directive: server
+  block:
+    - directive: listen
+      args:
+        - 127.0.0.1:6003
+    - directive: listen
+      args:
+        - 127.0.0.1:6004
+    - directive: proxy_pass
+      args:
+        - 127.0.0.1
+    - directive: proxy_protocol
+      args:
+        - 'on'
+
