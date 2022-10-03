@@ -1,0 +1,7 @@
+config: 
+  directive: str()
+  block: list(include('directive'))
+---
+directive:
+  directive: str()
+  args: list(str())

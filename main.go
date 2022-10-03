@@ -71,4 +71,11 @@ func main() {
 		return
 	}
 
+	f, err = os.Create("server_new2.conf")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	f.Close()
+	f.Write(nil)
 }
